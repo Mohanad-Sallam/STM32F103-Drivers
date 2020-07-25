@@ -1,3 +1,6 @@
+
+#ifndef DSYSTICK_H_
+#define DSYSTICK_H_
 /*************************************
  *****MACROS_AHB_CLK_PRESCALER********
  *************************************/
@@ -76,3 +79,4 @@ uint_8t SYSTICK_SetCallback (systickcbf_t cbf);
 uint_8t SYSTICK_SetTime (uint_32t timeus,uint_32t clk);
 
 
+#endif

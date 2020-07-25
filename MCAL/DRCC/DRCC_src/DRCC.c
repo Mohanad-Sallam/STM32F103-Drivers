@@ -1,3 +1,4 @@
+#include "STD_TYPES.h"
 #include "DRCC.h"
 
 #define RCC ((volatile RCC_t *)0X40021000)

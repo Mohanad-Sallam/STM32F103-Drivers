@@ -2,22 +2,12 @@
  * DNVIC.h
  *
  *  Created on: Feb 22, 2020
- *      Author: Ahmed Qandeel
+ *      Author: Mohanad Sallam
  */
 
 #ifndef DNVIC_H_
 #define DNVIC_H_
 
-typedef unsigned char uint_8t;
-typedef unsigned short int uint_16t;
-typedef unsigned long int uint_32t;
-typedef unsigned long long uint_64t;
-typedef signed char int_8t;
-typedef signed short int int_16t;
-typedef signed short int int_32t;
-
-#define OK		0
-#define NOT_OK 	1
 
 /*************************************
  *******PERIPHERAL_INTERRUPTS*********
@@ -501,7 +491,7 @@ void DNVIC_voidDisableAllFaults(void);
 void DNVIC_voidEnableAllFaults(void);
 
 /************************************************************************
- * Function name: DRCC_SetClkStatus
+ * Function name: DNVIC_voidSetBASEPRI
  *
  * parameters:  Input:
  *                 clk
@@ -514,7 +504,7 @@ void DNVIC_voidEnableAllFaults(void);
  * return: OK, NOT_OK
  * Description: a function to set Base Priority
  ***************************************************************************/
-void DNVIC_voidSetBASEPRI(uint_8t priority);
+void DNVIC_voidSetBASEPRI(volatile uint_8t priority);
 
 
 #endif /* DNVIC_H_ */
