@@ -494,9 +494,9 @@ void DNVIC_voidEnableAllFaults(void);
  * Function name: DNVIC_voidSetBASEPRI
  *
  * parameters:  Input:
- *                 clk
- *                     type: uint_8t
- *                     Description: Priority (HSI_ENABLE,HSE_ENABLE,PLL_ENABLE)
+ *                 priority
+ *                   type: uint_8t
+ *                   Description:  Base Priority which any interrupt with lower priority will be disabled
  *
  *
  *              Output: NA
@@ -505,6 +505,30 @@ void DNVIC_voidEnableAllFaults(void);
  * Description: a function to set Base Priority
  ***************************************************************************/
 void DNVIC_voidSetBASEPRI(volatile uint_8t priority);
-
-
+/************************************************************************
+ * Function name: DNVIC_voidChangeVectorOffset
+ *
+ * parameters:  Input:
+ *                 offset
+ *                   type: uint_32t
+ *                   Description:  The offset -from the start of the memory- of the new vector table
+ *
+ *
+ *              Output: NA
+ *              In/out: NA
+ * return: OK, NOT_OK
+ * Description: a function to change vector offset of the vector table
+ ***************************************************************************/
+void DNVIC_voidChangeVectorOffset (uint_32t offset);
+/************************************************************************
+ * Function name: DNVIC_voidSysReset
+ *
+ * parameters:  NA
+ *
+ *              Output: NA
+ *              In/out: NA
+ * return: OK, NOT_OK
+ * Description: a function to perform a software reset
+ ***************************************************************************/
+void DNVIC_voidSysReset(void);
 #endif /* DNVIC_H_ */
