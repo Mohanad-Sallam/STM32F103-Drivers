@@ -2,7 +2,7 @@
  * UART.h
  *
  *  Created on: Mar 25, 2020
- *      Author: MOSTAFA
+ *      Author: Mohanad Sallam
  */
 #ifndef DUART_H_
 #define DUART_H_

@@ -2,7 +2,7 @@
  * UART_Private.h
  *
  *  Created on: Apr 16, 2020
- *      Author: MOSTAFA
+ *      Author: Mohanad Sallam
  */
 
 #ifndef UART_PRIVATE_H_
